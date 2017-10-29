@@ -1,0 +1,20 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+"v4l2" = {git = "https://github.com/systemetric/v4l2.git", editable = true}
+numpy = "*"
+
+
+[dev-packages]
+
+
+
+[requires]
+
+python_version = "2.7"

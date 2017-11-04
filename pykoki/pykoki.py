@@ -399,6 +399,7 @@ class PyKoki:
             marker = cast(markers.contents.pdata[i], POINTER(Marker)).contents
             ret.append(self._make_copy(marker))
 
+        self.libkoki.koki_image_free(image)
         # free the markers -- we only need the Python list
         self.libkoki.koki_markers_free(markers)
 

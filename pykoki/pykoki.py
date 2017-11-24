@@ -246,7 +246,7 @@ class PyKoki:
             libkoki = cdll.LoadLibrary(path)
 
         if libkoki == None:
-            raise Exception("pykoki: libkoki.so not found")
+            raise Exception("pykoki: libkoki.so not found at {}".format(libdir))
 
         self.libkoki = libkoki
 
